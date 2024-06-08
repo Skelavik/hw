@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "Adela Hend",
+    "picture": "http://picsum.photo/200",
+    "position": "Go разработчик",
+    "gender": "female",
+    "age": 40,
+    "skills": "go, python"
+  },
+  {
+    "id": 2,
+    "name": "Sheri Torres",
+    "picture": "http://picsum.photo/200",
+    "position": "Delphi developer",
+    "gender": "female",
+    "age": 26,
+    "skills": "Delphi, pascal, fortran, basic"
+  },
+  {
+    "id": 3,
+    "name": "Burt Stein",
+    "picture": "http://picsum.photo/200",
+    "position": "Team lead",
+    "gender": "male",
+    "age": 34,
+    "skills": "python"
+  }
+
+]

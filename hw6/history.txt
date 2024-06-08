@@ -1,0 +1,6 @@
+liza 0
+dima 10
+masha 10
+aleks 20
+ria 0
+dima 10

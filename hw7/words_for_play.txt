@@ -1,0 +1,12 @@
+{"Транспорт":{
+"100":{"questoin":"plane","answer":"самолет","asked":False},
+"200":{"questoin":"train","answer":"поезд","asked":False},
+"300":{"questoin":"car","answer":"машина","asked":False}},
+             "Животные":{
+"100":{"questoin":"dog","answer":"собака","asked":False},
+"200":{"questoin":"shark","answer":"акула","asked":False},
+"300":{"questoin":"sparrow","answer":"воробей","asked":False}},
+              "Еда":{
+"100":{"questoin":"apple","answer":"яблоко","asked":False},
+"200":{"questoin":"berry","answer":"ягода","asked":False},
+"300":{"questoin":"venison","answer":"оленина","asked":False}}

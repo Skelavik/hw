@@ -14,7 +14,19 @@ def show_all_candidate():
 @app.route("/candidate/<int:x>")
 def page_index(x):
     data = utils.get_candidate(x)
-    return render_template("card.html",name_candidate=data["name"],positional_candidate=data["position"],skills_candidate=data["skills"],foto_candidate=data["picture"])
+    return render_template("card.html",name_candidate=data["name"],
+                           positional_candidate=data["position"],
+                           skills_candidate=data["skills"],
+                           foto_candidate=data["picture"])
+
+
+@app.route("/search/<candidate_name>")
+def search_candidate_name(candidate_name):
+    name_candidate = []
+    data = utils.get_candidate_by_name(candidate_name)
+    count = len(data)
+    return render_template("search.html",items=data,count=count)
+
 
 
 

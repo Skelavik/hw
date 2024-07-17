@@ -13,10 +13,17 @@ def get_candidate(candidate_id):
     return data[candidate_id]
 
 def get_candidate_by_name(candidate_name):
+    data_by_name = []
+    fio_in_request = candidate_name.split(" ")
+    """Сначало имя, потом фамилия"""
     for id,info in load_candidates_from_json().items():
-        if candidate_name == info["name"]:
-            return info
-    return "Кандидата нет"
+        fio_in_data = info["name"].split(" ")
+        if fio_in_request[0] == fio_in_data[0]:
+            data_by_name.append((id,info["name"]))
+    if len(data_by_name) == 0:
+        return "Кандидата нет"
+    else:
+        return data_by_name
 
 def get_candidates_by_skill(skill_name):
     candidates_by_skills = []

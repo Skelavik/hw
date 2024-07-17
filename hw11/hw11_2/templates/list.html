@@ -1,4 +1,4 @@
 <h1>Все кандидаты</h1>
-{%for item in items %}
-    <p><a href="/candidate/<x>">{{name}}</a></p>
+{%for name in items %}
+    <p><a href="/candidate/{{name[0]}}">{{name[1]}}</a></p>
 {%endfor%}

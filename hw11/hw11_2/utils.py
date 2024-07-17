@@ -30,7 +30,7 @@ def get_candidates_by_skill(skill_name):
     for id,info in load_candidates_from_json().items():
         set_skills = info["skills"].split(", ")
         if skill_name in set_skills:
-            candidates_by_skills.append({id:info})
+            candidates_by_skills.append((id,info["name"]))
     return candidates_by_skills
 
 

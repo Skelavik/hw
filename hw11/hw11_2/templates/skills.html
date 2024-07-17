@@ -1,4 +1,4 @@
-<h1>Найдено со скилом {{name_skills}} : {{count_candidates}}</h1>
+<h1>Найдено со скилом {{name_skill}} : {{count_candidates}}</h1>
 {%for item in items %}
-    <p><a href="/candidate/<x>">{{name}}</a></p>
+    <p><a href="/candidate/{{item[0]}}">{{item[1]}}</a></p>
 {%endfor%}

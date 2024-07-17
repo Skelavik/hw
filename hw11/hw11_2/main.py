@@ -27,7 +27,11 @@ def search_candidate_name(candidate_name):
     count = len(data)
     return render_template("search.html",items=data,count=count)
 
-
-
+@app.route("/skill/<skill_name>")
+def search_by_skill(skill_name):
+    data = utils.get_candidates_by_skill(skill_name)
+    count = len(data)
+    return render_template("skills.html",name_skill=skill_name,items=data,
+                           count_candidates=count)
 
 app.run()

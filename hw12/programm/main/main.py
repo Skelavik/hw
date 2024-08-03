@@ -15,6 +15,12 @@ def search_page():
     search_by = request.args['s']
     logging.info(f"Слово для поиска: {search_by}")
     posts = [x for x in load_posts() if search_by in x['content'].lower()]
+    
+    #posts = []
+    #for x in load_posts():
+    #    if search_by.lower() in x['content'].lower():
+    #        posts.append(x)
+
     return render_template('post_list.html ',search_by=search_by, posts=posts)
 
 
